@@ -93,6 +93,7 @@ class ViewController: UITableViewController
         
         let data = try! NSJSONSerialization.dataWithJSONObject(form, options: NSJSONWritingOptions.PrettyPrinted)
         print(String(data: data, encoding: NSUTF8StringEncoding)!)
+        print("Hello")
         
         
         //Display the form submitted alert message.
