@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+let kUsername = "jitu310"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Instantiate the viewcontroller,this will present the viewcontroller at application startup.
+        window = UIWindow()
+        window!.rootViewController = UINavigationController(rootViewController:ViewController())
+        window!.backgroundColor = UIColor.whiteColor()
+        window!.frame = UIScreen.mainScreen().bounds
+        window!.makeKeyAndVisible()
+        
         return true
     }
 

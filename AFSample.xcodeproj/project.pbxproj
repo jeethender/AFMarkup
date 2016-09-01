@@ -7,21 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84420177A1F3A1675A6B6335 /* Pods_AFSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616923780F799358AAAF5633 /* Pods_AFSample.framework */; };
+		C81667151D755730004605A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C81667141D755730004605A9 /* Localizable.strings */; };
+		C81667171D7599D9004605A9 /* states.json in Resources */ = {isa = PBXBuildFile; fileRef = C81667161D7599D8004605A9 /* states.json */; };
 		C835F97D1D74024A00329E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C835F97C1D74024A00329E55 /* AppDelegate.swift */; };
 		C835F97F1D74024A00329E55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C835F97E1D74024A00329E55 /* ViewController.swift */; };
-		C835F9821D74024A00329E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C835F9801D74024A00329E55 /* Main.storyboard */; };
 		C835F9841D74024A00329E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C835F9831D74024A00329E55 /* Assets.xcassets */; };
 		C835F9871D74024A00329E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C835F9851D74024A00329E55 /* LaunchScreen.storyboard */; };
+		C835F98F1D742B1E00329E55 /* countries_short.txt in Resources */ = {isa = PBXBuildFile; fileRef = C835F98E1D742B1E00329E55 /* countries_short.txt */; };
+		C835F9911D742B2500329E55 /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = C835F9901D742B2500329E55 /* countries.txt */; };
+		C835F9991D74336700329E55 /* ViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = C835F9981D74336700329E55 /* ViewController.xml */; };
+		C835F99B1D745A4400329E55 /* MarkupKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C835F9941D74328900329E55 /* MarkupKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C835F99C1D745A4400329E55 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C835F99B1D745A4400329E55 /* MarkupKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		616923780F799358AAAF5633 /* Pods_AFSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12487B845AA59F72CBC179F /* Pods-AFSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFSample/Pods-AFSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C81667141D755730004605A9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C81667161D7599D8004605A9 /* states.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = states.json; sourceTree = "<group>"; };
 		C835F9791D74024900329E55 /* AFSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C835F97C1D74024A00329E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C835F97E1D74024A00329E55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C835F9811D74024A00329E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C835F9831D74024A00329E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C835F9861D74024A00329E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C835F9881D74024A00329E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C835F98E1D742B1E00329E55 /* countries_short.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries_short.txt; sourceTree = "<group>"; };
+		C835F9901D742B2500329E55 /* countries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.txt; sourceTree = "<group>"; };
+		C835F9921D74327800329E55 /* MarkupKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarkupKit.framework; path = ../../MarkupKit.framework; sourceTree = "<group>"; };
+		C835F9941D74328900329E55 /* MarkupKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MarkupKit.framework; sourceTree = "<group>"; };
+		C835F9981D74336700329E55 /* ViewController.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ViewController.xml; sourceTree = "<group>"; };
+		EF5519B9CEA29AEF98067B92 /* Pods-AFSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFSample/Pods-AFSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +58,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84420177A1F3A1675A6B6335 /* Pods_AFSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B74EFE93EE8CA9304F6D052 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B12487B845AA59F72CBC179F /* Pods-AFSample.debug.xcconfig */,
+				EF5519B9CEA29AEF98067B92 /* Pods-AFSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C835F9701D74024900329E55 = {
 			isa = PBXGroup;
 			children = (
+				C835F9941D74328900329E55 /* MarkupKit.framework */,
 				C835F97B1D74024A00329E55 /* AFSample */,
 				C835F97A1D74024900329E55 /* Products */,
+				5B74EFE93EE8CA9304F6D052 /* Pods */,
+				CFA6DDA77D5A2E9D6FCFFE52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +98,25 @@
 			children = (
 				C835F97C1D74024A00329E55 /* AppDelegate.swift */,
 				C835F97E1D74024A00329E55 /* ViewController.swift */,
-				C835F9801D74024A00329E55 /* Main.storyboard */,
+				C835F9981D74336700329E55 /* ViewController.xml */,
+				C81667141D755730004605A9 /* Localizable.strings */,
+				C81667161D7599D8004605A9 /* states.json */,
+				C835F98E1D742B1E00329E55 /* countries_short.txt */,
+				C835F9901D742B2500329E55 /* countries.txt */,
 				C835F9831D74024A00329E55 /* Assets.xcassets */,
 				C835F9851D74024A00329E55 /* LaunchScreen.storyboard */,
 				C835F9881D74024A00329E55 /* Info.plist */,
 			);
 			path = AFSample;
+			sourceTree = "<group>";
+		};
+		CFA6DDA77D5A2E9D6FCFFE52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C835F9921D74327800329E55 /* MarkupKit.framework */,
+				616923780F799358AAAF5633 /* Pods_AFSample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C835F98B1D74024A00329E55 /* Build configuration list for PBXNativeTarget "AFSample" */;
 			buildPhases = (
+				6410AC9B5E901CC8E70C45B3 /* [CP] Check Pods Manifest.lock */,
 				C835F9751D74024900329E55 /* Sources */,
 				C835F9761D74024900329E55 /* Frameworks */,
 				C835F9771D74024900329E55 /* Resources */,
+				0C9BA91065B5420D93DEAEB9 /* [CP] Embed Pods Frameworks */,
+				F557CB4FC87FE651B2902DF1 /* [CP] Copy Pods Resources */,
+				C835F99C1D745A4400329E55 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,13 +182,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C835F98F1D742B1E00329E55 /* countries_short.txt in Resources */,
+				C81667171D7599D9004605A9 /* states.json in Resources */,
+				C81667151D755730004605A9 /* Localizable.strings in Resources */,
 				C835F9871D74024A00329E55 /* LaunchScreen.storyboard in Resources */,
 				C835F9841D74024A00329E55 /* Assets.xcassets in Resources */,
-				C835F9821D74024A00329E55 /* Main.storyboard in Resources */,
+				C835F9911D742B2500329E55 /* countries.txt in Resources */,
+				C835F9991D74336700329E55 /* ViewController.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C9BA91065B5420D93DEAEB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFSample/Pods-AFSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6410AC9B5E901CC8E70C45B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F557CB4FC87FE651B2902DF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFSample/Pods-AFSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C835F9751D74024900329E55 /* Sources */ = {
@@ -144,14 +255,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C835F9801D74024A00329E55 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C835F9811D74024A00329E55 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C835F9851D74024A00329E55 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -250,8 +353,13 @@
 		};
 		C835F98C1D74024A00329E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12487B845AA59F72CBC179F /* Pods-AFSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AFSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maisa.AFSample;
@@ -261,8 +369,13 @@
 		};
 		C835F98D1D74024A00329E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5519B9CEA29AEF98067B92 /* Pods-AFSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AFSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maisa.AFSample;
@@ -289,6 +402,7 @@
 				C835F98D1D74024A00329E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

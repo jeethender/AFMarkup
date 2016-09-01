@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Properties {
+"formField":{
+"selectionStyle": "none"
+},
+"hintIcon":{
+"tintColor": "#aaaaaa"
+}
+}?>
+
+<!-- Registration Form -->
+<LMTableView style="groupedTableView">
+    
+    <!-- Name Header Section-->
+    <?sectionHeaderView?>
+    <UITableViewHeaderFooterView textLabel.text = "@name"/>
+    <!--first name -->
+    <LMTableViewCell class="formField">
+        <UITextField id="firstNameTextField" placeholder="@first" autocorrectionType="no"/>
+    </LMTableViewCell>
+    <LMTableViewCell class="formField">
+        <UITextField id="lastNameTextField" placeholder="@last" autocorrectionType="no"/>
+    </LMTableViewCell>
+    
+    <?sectionBreak?>
+    
+    <!-- Address Section -->
+    <?sectionHeaderView?>
+    <UITableViewHeaderFooterView textLabel.text="@address"/>
+    <!-- Street TextField -->
+    <LMTableViewCell class = "formField">
+        <UITextField id="streetTextField" placeholder="@street" autocorrectionType="no"/>
+    </LMTableViewCell>
+    <!-- CityTextField -->
+    <LMTableViewCell class="formField">
+        <UITextField id="cityTextField" placeholder="@city" autocorrectionType="no"/>
+    </LMTableViewCell>
+    <!-- State and ZipCode textFields -->
+    <LMTableViewCell class= "formField">
+        <LMRowView>
+            <UITextField id="StateTextField" placeholder="@state" weight="2">
+                <?inputView?>
+                <LMPickerView id="statePickerView"/>
+                <?inputAccessoryView?>
+                <UIToolbar>
+                    <item type="cancel" action="cancelStateEdit"/>
+                    <item type="flexibleSpace"/>
+                    <item type="done" action="updateStateText"/>
+                </UIToolbar>
+            </UITextField>
+            <UITextField id="zipCodeTextField" placeholder="@zipCode" keyboardType="phonePad" textAlignment="right" weight="1" />
+        </LMRowView>
+    </LMTableViewCell>
+    
+    <?sectionBreak?>
+    <!-- Contact Information Section -->
+    <?sectionHeaderView?>
+    <UITableViewHeaderFooterView textLabel.text="@contactInformation"/>
+    <!-- Phone Number -->
+    <LMTableViewCell class="formField">
+        <UITextField id="phoneNumberTextField" placeholder="@phoneNumber" keyboardType="phonePad" rightViewMode ="always">
+            <?rightView?>
+            <UIImageView class="hintIcon" image= "PhoneIcon"/>
+        </UITextField>
+    </LMTableViewCell>
+    <!--Email Address -->
+    <LMTableViewCell class="formField">
+        <UITextField id="emailAddressTextField" placeholder="@emailId" keyboardType="emailAddress" autocorrectionType="no" autocapitalizationType = "none" rightViewMode="always">
+            <?rightView?>
+            <UIImageView class="hintIcon" image="EmailIcon"/>
+        </UITextField>
+    </LMTableViewCell>
+    
+    <?sectionBreak?>
+    <!--Date of Birth section -->
+    <?sectionHeaderView?>
+    <UITableViewHeaderFooterView textLabel.text="@dateofBirth"/>
+    <LMTableViewCell class="formField">
+        <UIDatePicker id="dateOfBirthDatePicker" datePickerMode="date" height="162"/>
+    </LMTableViewCell>
+    
+    <?sectionBreak?>
+    <!--Gender Section -->
+     <?sectionName gender?>
+     <?sectionSelectionMode singleCheckmark?>
+     <?sectionHeaderView?>
+     <UITableViewHeaderFooterView textLabel.text="@gender"/>
+       <UITableViewCell textLabel.text="@male" value="M" checked="true"/>
+       <UITableViewCell textLabel.text="@female" value="F'"/>
+     
+    
+</LMTableView>
